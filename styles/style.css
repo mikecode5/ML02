@@ -1,10 +1,12 @@
 /* Google Font import */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+/* Declaring google font for all content under body tag */
 body{
     font-family: 'Poppins', sans-serif;  
 }
 
+/* Beginning working on different section */
 /* Style rules for Top section */
 
 .top-section{
@@ -21,6 +23,7 @@ body{
     font-size: 64px;
     line-height: 80px;
     color: #ffffff;
+    margin-top: 80px;
 }
 
 .watch-button{
@@ -112,8 +115,42 @@ body{
     display: grid;
     grid-template-columns: 1fr;
     margin-top: 158px;
+    text-decoration: none;
  }
+
+.footer-text{
+    font-size: 20px;
+}
 
  .footer-section img{
      width: 490px;
  }
+
+ /* Starting media query style for responsive css */
+
+ /* Breakpoint for Phone taken at 688px maximum width */
+ @media (max-width: 688px) {
+    .top-section{
+        flex-direction: column;
+ }
+    .player-area{
+        display: grid;
+        grid-template-columns: 330px;
+    }
+    .footer-section img{
+        width: 220px;
+    }
+ }
+    /* Breakpiont for Tablet taken between 689px and 992px width */
+ @media (min-width: 689px) and (max-width: 992px) {
+    .top-section{
+        flex-direction: column;
+    }
+     .player-area{
+        display: grid;
+        grid-template-columns: repeat(2, 330px);
+    }
+     .footer-section img{
+    width: 220px;
+    }
+}
