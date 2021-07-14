@@ -1,8 +1,11 @@
+/* Google Font import */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body{
     font-family: 'Poppins', sans-serif;  
 }
+
+/* Style rules for Top section */
 
 .top-section{
     display: flex;
@@ -18,8 +21,6 @@ body{
     font-size: 64px;
     line-height: 80px;
     color: #ffffff;
-    /* margin-left: 156px; */
-    /* margin-top: 207px; */
 }
 
 .watch-button{
@@ -31,13 +32,19 @@ body{
     padding: 10px 24px;
 }
 
+/* Transform effect on text */
+.tournament:hover {
+    transform:scale(1.2); 
+}
+
 .top-section img{
-    /* position: absolute; */
     width: 556.01px;
     height: 438px;
     left: 1299.01px;
     top: 153px;
 }
+
+/* Style rules for player info section */
 
 .player-area{
     display: grid;
@@ -77,6 +84,29 @@ body{
     width: 300px;
     overflow: hidden;
  }
+
+/* Style-rule for bottom bonus sections */
+
+.bonus-section{
+    margin-top: 80px;
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 32%;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10%;
+    padding: 18px;
+    box-shadow: 3px 3px 10px gray;
+    border-radius: 15px;
+}
+
+.poll{
+    text-align: left;
+}
+
+
+/* style rule for footer section */
 
  .footer-section{
     display: grid;
